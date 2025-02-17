@@ -1,6 +1,8 @@
 #se importa el módulo os para realizar operaciones del sistema, como verificar la existencia de archivos y eliminarlos.
 #se crea la clase Pelicula con los atributos privados __titulo, director, año, duracion y genero.
 
+# \U00023F1  U+23F1
+
 import os
 
 class Pelicula:
@@ -12,7 +14,7 @@ class Pelicula:
         self.genero = genero
         
     def __str__(self):
-        return f"{self.__titulo} ({self.año}) - Dirigida por {self.director}"
+        return f"{self.__titulo} ({self.año}) ->Dirigida por {self.director}  ->Duración {self.duracion} ->Género {self.genero}"
     
 class CatalogoPeliculas:
     def __init__(self, nombre):
@@ -42,6 +44,6 @@ class CatalogoPeliculas:
     def eliminar(self):
         if os.path.exists(self.ruta_archivo):
             os.remove(self.ruta_archivo)
-            print("El catálogo ha sido eliminado.")
+            print("El catálogo se elimino correctamente.")
         else:
             print("El catálogo no existe.")

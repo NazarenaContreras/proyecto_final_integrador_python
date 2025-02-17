@@ -29,7 +29,7 @@ while True:
     elif opcion == '3':
         catalogo.eliminar()
     elif opcion == '4':
-        print("Saliendo del programa...")
+        print("Cerrando programa.")
         break
     else:
         print("Opción no válida. Inténtalo de nuevo.")
